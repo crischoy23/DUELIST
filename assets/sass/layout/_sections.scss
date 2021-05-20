@@ -222,19 +222,33 @@
     width: 115px;
     height:115px;
 }
+
 .reviews__box-quote{
     width: 96px;
-
 }
 .stars-box {
-    width: 170px;
+    width: 200px;
     justify-content: flex-start;
+    height: 90px;
+    margin-bottom: -20px;
 }
 .reviews__box-stars{
-    width: 30.43px;
+    //width: 30.43px;
+    width: 33px;
+    margin-right: 3px;
 }
 .reviews__box{
     padding:96px 28px 54px 28px;
+    background: $CARD-lINEAR;
+}
+#reviews .reviews__img-box{
+    width: 150px;
+    height: 120px;
+    top:-30px;
+    right:21px;
+}
+#reviews .reviews__img-box img{
+    width: 100%;
 }
 
 //AWARDS
