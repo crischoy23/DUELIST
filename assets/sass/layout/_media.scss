@@ -233,18 +233,27 @@
     //HERO
 
     //ABOUT
-    
+    .about__img{
+        padding-top: 0px;
+    }
     //PORTFOLIO
-    #portfolio .extension{
+    #explore .extension{
         display: none;
     }
 
-    #portfolio .card--1x{
-        height:320px !important;
+    #explore .big-card{
+        height:670px;
     }
-    #portfolio .card--1x img{
+    #explore .big-card .card-img{
+        height:498px;
+    }
+    #explore .row .card--1x{
+        height:320px;
+    }
+    #explore .row .card--1x .card-img{
         height:176px ;
     }
+    
 
     //FEATURES
     #features .features__card-text{
@@ -254,6 +263,9 @@
     
 
     //PROCESS
+   
+
+
 
     //NUMBERS
     #numbers .flexbox{

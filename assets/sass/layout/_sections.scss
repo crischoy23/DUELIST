@@ -78,6 +78,77 @@
 
 
 //PROCESS
+#process p{
+    max-width: 570px;
+    margin: 0 auto;
+    
+}
+#process .process__prgph{
+    margin-bottom: 70px;
+}
+#process .column-lg-8{
+    position: relative;
+}
+#process .p-absolute{
+    width:270px;
+    height: 352px;
+    bottom: -30px;
+}
+.process__small-card{
+    width: 270px;
+    height: 352px;
+    background: $COLOR_WHITE;
+    border-radius: 12px;
+    padding: 26px 32px;
+}
+#process .process__small-card span{
+    color: #3333337E;
+    
+}
+#process .process__small-card h3,
+#process .process__small-card p{
+    color: $COLOR_TEXT;
+    
+}
+
+#process .wrapper{
+    background-color: black;
+    width: 100%;
+
+}
+.slides-container{
+    height:500px;
+    position: relative;
+}
+.slide-image{
+    height: 100%;
+    position: absolute;
+}
+.slide-image img{
+    width: 100%;
+    height: 100%;
+}
+.navigation-dots{
+    height: 32px;
+    margin:16px 0;
+}
+.single-dot{
+    background:blanchedalmond;
+    height: 16px;
+    width: 16px;
+    border:2px solid black;
+    border-radius: 50%;
+    margin:0 8;
+    cursor: pointer;
+    transition: 400ms;
+}
+.single-dot.active{
+    background-image: $LINEAR_GRADIENT;
+}
+
+.wrapper{
+    height:500px;
+}
 
 //NUMBERS
 #numbers .flexbox{
