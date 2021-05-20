@@ -925,8 +925,26 @@ header {
   height: 115px;
 }
 
+.reviews__polygon-box {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 72%;
+}
+
 .reviews__box-quote {
   width: 96px;
+}
+
+.reviews__polygon-box .polygon__img {
+  width: 80px;
+  height: 80px;
+}
+
+.reviews__left h4 {
+  margin-bottom: 44px;
 }
 
 .stars-box {
@@ -1099,6 +1117,10 @@ footer .prgph {
         -ms-flex-pack: justify !important;
             justify-content: space-between !important;
   }
+  .reviews__polygon-box .polygon__img {
+    width: 120px;
+    height: 115px;
+  }
   .awards__flexbox {
     width: 90%;
     margin: 0 auto;
@@ -1155,7 +1177,6 @@ footer .prgph {
     height: 100%;
     top: 0;
     left: 0;
-    border: 1px solid red;
   }
   .banner__row-txt {
     width: 50%;
@@ -1286,6 +1307,20 @@ footer .prgph {
   }
   .reviews__box {
     padding: 96px 35px 54px 35px;
+  }
+  .reviews__polygon-box {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 72%;
+  }
+  .reviews__box-quote {
+    width: 96px;
+  }
+  .reviews__polygon-box .polygon__img {
+    width: 150px;
+    height: 145px;
+    margin-left: -22px;
   }
 }
 

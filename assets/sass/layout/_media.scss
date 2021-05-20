@@ -27,6 +27,14 @@
     //EVENTS
 
     //REVIEWS
+    
+    
+    .reviews__polygon-box .polygon__img{
+        width: 120px;
+        height:115px;
+        
+    }
+
 
     //AWARDS
     .awards__flexbox{
@@ -106,7 +114,6 @@
         height: 100%;
         top: 0;
         left:0;
-        border: 1px solid red;
        
     }
 
@@ -195,6 +202,8 @@
     //EVENTS
 
     //REVIEWS
+    
+
 
     //AWARDS
     .awards__flexbox{
@@ -285,6 +294,19 @@
     //REVIEWS
     .reviews__box{
         padding:96px 35px 54px 35px;
+    }
+    .reviews__polygon-box{
+       justify-content: space-between;
+        width:72%;
+    }
+    .reviews__box-quote{
+        width: 96px;
+    }
+    .reviews__polygon-box .polygon__img{
+        width: 150px; 
+        height:145px;
+        margin-left: -22px;
+        
     }
 
     //AWARDS

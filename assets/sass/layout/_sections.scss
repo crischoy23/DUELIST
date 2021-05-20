@@ -222,9 +222,22 @@
     width: 115px;
     height:115px;
 }
-
+.reviews__polygon-box{
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width:72%;
+}
 .reviews__box-quote{
     width: 96px;
+}
+.reviews__polygon-box .polygon__img{
+    width: 80px;
+    height: 80px;
+    
+}
+
+.reviews__left h4{
+    margin-bottom: 44px;
 }
 .stars-box {
     width: 200px;
