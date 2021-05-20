@@ -1,0 +1,31 @@
+.d-flex
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-relative{
+    position: relative;
+}
+.p-absolute{
+    position: absolute;
+}
+.sp-btwn{
+    justify-content: space-between;
+}
+
+.txt-center{
+    text-align:center;
+}
+.half-card{
+    background-image: $CARD-lINEAR_BACK;
+}
+.card-caption{
+    padding: 26px 32px 42px 32px;
+}
+
+
+
+

@@ -1,0 +1,52 @@
+.btn{
+    padding: 16px 25px;
+    border: 1px solid $CLEAR-TXT;
+    border-radius: 5px;
+}
+.btn:hover{
+    background: $COLOR-BTN-BLUE;
+}
+.btn-solid,
+.btn-solid-pink{
+    padding: 16px 37px;
+    background-color:$COLOR-BTN-BLUE;
+    border-radius: 5px;
+}
+.btn-solid:hover{
+    background-color: $COLOR_PINK;
+}
+.btn-solid-pink{  
+    background-color:#eb525f;
+}
+.btn-solid-pink:hover{
+    background-color: $COLOR-BTN-BLUE;
+}
+.play-btn{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-image: $LINEAR_GRADIENT;
+    
+
+    img{
+       width: 16px; 
+       height: 16px;
+    }
+}
+.play-btn:hover{
+    background-image: $LINEAR_GRADIENT_BACK;
+}
+#hero .hero__content__btns{
+    justify-content: flex-start;
+    align-items: center;
+
+    .btn-solid{
+        margin-right: 30px;
+    }
+    .play-btn{
+        margin-right: 10px;
+    }
+    span{
+        margin-top: 32px;
+    }
+}

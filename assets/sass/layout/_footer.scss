@@ -1,0 +1,64 @@
+footer{
+    text-align: center;
+
+    .container{
+        padding: 0 22px;
+    }
+    .txt-prgph-s{
+        color:$COLOR_WHITE;
+    }
+}
+
+.footer-bottom{
+    width:100%;
+    padding-top: 10px;
+}
+.footer-bottom h3{
+    margin-bottom: 26px;
+}
+
+#footer .row:nth-child(1){
+    border-bottom: 1px solid $CLEAR-TXT;
+    margin-bottom: 50px;
+}
+
+.footer-box{
+    padding-bottom: 50px;
+}
+
+.footer-row{
+    text-align: center;
+    flex-direction: column;
+    padding-bottom:64px;
+    margin-bottom: 41px;
+    
+    a{
+        line-height: 32px;
+    }
+}
+
+footer .prgph{
+    color:$COLOR_WHITE;
+    margin-bottom: 0;
+}
+.circle_icon{
+    border-radius: 50%;
+    background: $COLOR-BTN-BLUE;
+    width: 48px;
+    height: 48px;
+
+    .socmed_icon{
+        color: $COLOR_WHITE;
+        font-size: 16px;
+        line-height: 48px;
+    }
+}
+.circle_icon:hover{
+    background-image: $LINEAR_GRADIENT;
+}
+.circle_icon:not(:last-child){
+    margin-right: 8px;
+    
+}
+
+

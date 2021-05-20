@@ -1,0 +1,17 @@
+header{
+    padding: 10px 0;
+    background: #000;
+}
+
+.nav__btn{
+    padding:15px 26.73px 16px 25.27px;
+}
+.nav-menu,
+.nav__btn{
+    display: none;
+}
+.nav__btn--hamburger{
+    height: 48px;
+    width: 48px;
+    padding:16px;
+}

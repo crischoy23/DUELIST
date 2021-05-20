@@ -1,0 +1,95 @@
+// abstracts
+@import "abstracts/variables";
+// vendors
+
+// base
+@import "base/reset";
+@import "base/initial";
+@import "base/typography";
+@import "base/utility";
+
+// layout
+@import "layout/grid";
+@import "layout/header";
+@import "layout/sections";
+@import "layout/footer";
+@import "layout/media";
+
+// components
+@import "components/buttons";
+// pages
+@import "pages/home"; // themes
+
+.card {
+ // min-height: 300px;
+  width: 100%;
+  /* max-width: 570px; */
+  margin: 0 auto;
+  //background: green;
+  border: 5px solid black;
+  border-radius: 12px;
+}
+
+.card--2x {
+  min-height: 630px;
+}
+
+section:not(#section-1) {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+section:nth-child(even) {
+  background: gray;
+}
+
+#navbar {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  //border: 5px solid black;
+  z-index:999;
+
+  &.navbar--scroll {
+    background: black;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  
+
+  #hero .container,
+  #hero .row {
+    height: 100%;
+  }
+
+  #hero .row {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #hero {
+    max-height: calc(100vh + 30px);
+    min-height: 900px;
+  }
+}
+
+html {
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
+}
+
+#section-negative-top {
+  margin-top: -175px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}

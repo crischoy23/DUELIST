@@ -1,0 +1,227 @@
+.logo{
+    height: 50px;
+    width:180px;
+    margin-top: 5px;
+}
+.column{
+    margin-bottom: 30px;
+}
+
+//HERO
+
+#hero .row{
+    padding:30px 0;
+}
+#hero .hero__btn{
+    padding:15px 37.36px 16px 37.64px;
+}
+
+//ABOUT
+    .about__content__btn-main{
+        padding:15px 30.32px 16px 30.68px;
+    }
+
+//PORTFOLIO
+#explore .card--2x{
+    min-height: 320px;
+}
+#explore .btn{
+    padding:15px 44px 16px 45px;
+    margin-top: 27px;
+}
+#explore .row .prgph{
+    margin-bottom: 14px;
+}
+.explore__card-sm{
+    height:320px;
+    max-width: 342px;
+}
+.explore__card-caption-icon{
+    background: $COLOR-BTN-BLUE;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+
+.explore__card-caption-icon img{
+    width: 24px;
+    height: 24px;
+}
+.explore__content__btn{
+    width: 100%;
+}
+
+
+//FEATURES
+.features__card--polygon{
+    top:-72px;
+    right: 63px;
+
+}
+.polygon__ring{
+   height: 144px;
+   width: 144px; 
+}
+#features .features__card-text{
+    margin-bottom: 88px;
+}
+#features .features__card--box{
+    padding: 88px 32px 26px 32px;
+    text-align: center;
+    width: 270px;
+    //max-width: 297px;
+    //min-width: 206px;
+    background-image: $CARD-lINEAR;
+    margin: 0 auto;
+    margin-bottom: 66px;
+}
+
+
+//PROCESS
+
+//NUMBERS
+#numbers .flexbox{
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.numbers__box{
+    background-image: $CARD-lINEAR;
+    width: 220px;
+    height: 128px;
+    padding:24px 32px;
+    box-shadow: 0 8px 6px -6px black;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }  
+
+.numbers__box:hover{
+      background-image: $LINEAR_GRADIENT;
+}
+.numbers__title{
+    margin-bottom: 56px;
+}
+
+//SERVICES
+.services__content__btn{
+    justify-content: flex-start;
+    padding:0;
+    align-items: center;
+}
+
+//EVENTS
+.timer-img{
+    height: 14px;
+    width: 14px;
+    margin-right: 6px;
+    }
+.game-events__card-1,
+.game-events__card-2,
+.game-events__card-3{
+    position: relative;
+}
+.game-events__timer-1,
+.game-events__timer-2,
+.game-events__timer-3{
+    background-image: $LINEAR_GRADIENT;
+    position: absolute;
+    left:32px;
+    top: 32px;
+    padding:7px;
+    border-radius: 4px;
+}
+
+#game-events p,
+#articles p{
+    max-width: 570px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+#game-events .row .prgph{
+    margin-bottom: 12px;
+}
+#game-events .events__btn{
+    padding: 15px 44px 16px 45px;
+    margin-top: 27px;
+}
+
+
+//REVIEWS
+.polygon-sm{
+    width: 115px;
+    height:115px;
+}
+.reviews__box-quote{
+    width: 96px;
+
+}
+.stars-box {
+    width: 170px;
+    justify-content: flex-start;
+}
+.reviews__box-stars{
+    width: 30.43px;
+}
+.reviews__box{
+    padding:96px 28px 54px 28px;
+}
+
+//AWARDS
+.awards__flexbox img{
+    width: 110px;     
+}
+.awards__flexbox img:nth-child(1)
+{
+    width:170px;
+}
+.awards__flexbox img:nth-child(2){
+    width:150px;
+}
+.awards__title,
+.numbers__title{
+    margin-bottom: 52px;
+}
+
+//ARTICLES
+
+#banner{
+    
+    .banner__row{
+        background-image: $LINEAR_GRADIENT;
+        padding: 58px 28px 58px 28px;
+        height:384px;
+        border-radius: 12px;
+    }
+
+    .banner__col-content{  
+        z-index: 1;
+        padding: 0;
+        margin: 0;
+    }
+
+    .banner__row-btn,
+    .banner__row-txt{
+        padding:0 28px;
+    }
+    
+    .banner__col-img{
+        position: absolute;
+        top:50%;
+        right: 0;
+        height: 50%;
+        z-index: 0;
+    }
+    .banner__btn-box{
+        width: 50%;
+    }
+}
+#articles .game-articles-btn-main{
+    padding:15px 50px 16px 50px;
+    margin-top: 27px;
+}
+//BANNER
+#banner .btn-solid-pink{
+    padding:15px 40px 16px 41px;
+    
+}  
+    //FOOTER
