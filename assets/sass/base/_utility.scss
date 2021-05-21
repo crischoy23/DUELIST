@@ -22,8 +22,11 @@
 .half-card{
     background: linear-gradient(180deg, #4D4F95 0%, #2B2D66 100%);
     border: 2px solid rgba(255, 255, 255, 0.0782099);
-    
     box-shadow: 0px 24px 48px rgba(0, 1, 44, 0.157184);
+    transition: 0.3s;
+}
+.half-card:hover{
+    background: $CARD-lINEAR_BACK;
 }
 .card-caption{
     padding: 26px 32px 42px 32px;

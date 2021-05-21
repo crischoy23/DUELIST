@@ -103,6 +103,7 @@
     //ARTICLES
 
     //BANNER
+    
     .banner__col-content{
         width: 100%;
         justify-content: space-between;
@@ -120,7 +121,7 @@
         margin-bottom: 0;
     }
 
-    #banner .banner__row-btn{
+    #banner .banner__btn-box{
         width: 50%;
         align-items: center;
         display: flex;
@@ -145,6 +146,15 @@
     
 
     //FOOTER
+    .footer-box--logo,
+    .footer-box-icons{
+        
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        
+    }
  }
   @media screen and (min-width: 992px) {
     .container {
@@ -230,9 +240,14 @@
     .footer-bottom li:nth-child(2){
         margin-left: 48px;
     }
-    .footer-box{
+     
+    .footer-box--logo,
+    .footer-box-icons{
         padding-bottom: 0;
-    }  
+        height: 100%;
+        display:block;
+        
+    }
 }
 @media screen and (min-width:1200px){
     .container {

@@ -1,5 +1,8 @@
+
+
+//////////
 header{
-    padding: 10px 0;
+    padding: 10px 15px;
     background: #000;
 }
 
@@ -25,10 +28,9 @@ header{
     left: 0;
   }
   .navigation-bar li a {
-    color: #848484;
     
-    text-decoration: none;
-    text-align: center;
+    
+  
     padding: 20px 0;
     display: block;
     position: relative;
@@ -50,8 +52,13 @@ header{
     height: 2px;
     
   }
-  .navigation-bar a::before{
-    background-color: #e74c3c;
+  .link-txt:hover{
+    font-size: 20px;
+  }
+  .navigation-bar .link-txt::before{
+    background: rgb(0, 238, 255);
+    border-radius: 5px;
+    
   }
   .navigation-bar a:hover::before {
     right: 0;

@@ -23,17 +23,42 @@
 
   <body>
     <div class="outer p-relative">
+      <!--<div class="nav">
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-header">
+          <div class="nav-title">JoGeek</div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <div class="nav-links">
+          <a href="//github.io/jo_geek" target="_blank">About</a>
+          <a href="http://stackoverflow.com/users/4084003/" target="_blank"
+            >Games</a
+          >
+          <a href="https://codepen.io/jo_Geek/" target="_blank">Services</a>
+          <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank"
+            >Events</a
+          >
+          <a href="https://codepen.io/jo_Geek/" target="_blank">Blog</a>
+        </div>
+      </div>-->
       <header id="navbar" class="menu-nav">
         <div class="container d-flex sp-btwn navigation-bar">
           <img class="logo" src="./assets/img/game-logo.png" alt="" />
           <ul class="nav-menu d-flex">
-            <li><a class="nav-menu__link--odd" href="#">About</a></li>
-            <li><a class="nav-menu__link--even" href="#">Games</a></li>
-            <li><a class="nav-menu__link--odd" href="#">Services</a></li>
-            <li><a class="nav-menu__link--even" href="#">Events</a></li>
-            <li><a class="nav-menu__link--odd" href="#">Blog</a></li>
+            <li><a class="link-txt" href="#">About</a></li>
+            <li><a class="link-txt" href="#">Games</a></li>
+            <li><a class="link-txt" href="#">Services</a></li>
+            <li><a class="link-txt" href="#">Events</a></li>
+            <li><a class="link-txt" href="#">Blog</a></li>
           </ul>
-          <a href="#" class="btn nav__btn btn-fnt">Contact Us</a>
+          <a href="#" class="btn nav__btn btn-fnt btn-color">Contact Us</a>
           <a href="#" class="btn nav__btn--hamburger"
             ><img src="./assets/img/hamburger.svg" alt=""
           /></a>
@@ -61,7 +86,7 @@
                   <a class="btn-solid hero__btn btn-fnt hover" href="#"
                     >Portfolio</a
                   >
-                  <a class="play-btn d-flex hover" href="#"
+                  <a class="play-btn d-flex hover btn-color" href="#"
                     ><img src="./assets/img/play-btn.svg" alt="play-btn" />
                   </a>
                   <p class="prgrph-sm">Play Video</p>
@@ -102,7 +127,9 @@
                 web browsers and mobile phones.
               </p>
               <div class="about__content__btn">
-                <a class="about__content__btn-main btn-fnt btn" href="#"
+                <a
+                  class="about__content__btn-main btn-fnt btn btn-color"
+                  href="#"
                   >Our Principles</a
                 >
               </div>
@@ -113,103 +140,106 @@
     </section>
     <!--ABOUT-->
 
-    <section id="explore">
-      <div class="container">
-        <div class="txt-center section-title">
-          <h2 class="fnt-xs">Game Portfolio</h2>
-          <h2 class="h2">Explore Our Games</h2>
-          <p class="prgph">
-            Game Development is the art of creating games and describes the
-            design, development and release.
-          </p>
-        </div>
-        <div class="row">
-          <div class="column column-lg-6 column-xl-8">
-            <div class="row">
-              <div class="column column-md-6 column-lg-12 extension">
-                <div class="card half-card explore__card hover">
-                  <img
-                    class="card-img"
-                    src="./assets/img/empty-box-img.png"
-                    alt=""
-                  />
-                  <div class="card-caption d-flex sp-btwn">
-                    <div class="explore__card-caption-box">
-                      <h2 class="prgph">Action, RPG</h2>
-                      <h2 class="mini-h2">Funny Video Adventure</h2>
+    <div class="mid p-relative">
+      <section id="explore">
+        <div class="container">
+          <div class="txt-center section-title">
+            <h2 class="fnt-xs">Game Portfolio</h2>
+            <h2 class="h2">Explore Our Games</h2>
+            <p class="prgph">
+              Game Development is the art of creating games and describes the
+              design, development and release.
+            </p>
+          </div>
+          <div class="row">
+            <div class="column column-lg-6 column-xl-8">
+              <div class="row">
+                <div class="column column-md-6 column-lg-12 extension">
+                  <div class="card half-card explore__card hover">
+                    <img
+                      class="card-img"
+                      src="./assets/img/empty-box-img.png"
+                      alt=""
+                    />
+                    <div class="card-caption d-flex sp-btwn">
+                      <div class="explore__card-caption-box">
+                        <h2 class="prgph">Action, RPG</h2>
+                        <h2 class="mini-h2">Funny Video Adventure</h2>
+                      </div>
+                      <a class="explore__card-caption-icon d-flex" href="#"
+                        ><img src="./assets/img/tiny-cloud.png" alt=""
+                      /></a>
                     </div>
-                    <a class="explore__card-caption-icon d-flex" href="#"
-                      ><img src="./assets/img/tiny-cloud.png" alt=""
-                    /></a>
                   </div>
                 </div>
-              </div>
-              <div class="column column-md-6 column-lg-12">
-                <div class="card half-card explore__card big-card hover">
-                  <img
-                    class="card-img card-img--big"
-                    src="./assets/img/empty-box-img.png"
-                    alt=""
-                  />
-                  <div class="card-caption d-flex sp-btwn">
-                    <div class="explore__card-caption-box">
-                      <h2 class="prgph">Action, RPG</h2>
-                      <h2 class="mini-h2">Funny Video Adventure</h2>
+                <div class="column column-md-6 column-lg-12">
+                  <div class="card half-card explore__card big-card hover">
+                    <img
+                      class="card-img card-img--big"
+                      src="./assets/img/empty-box-img.png"
+                      alt=""
+                    />
+                    <div class="card-caption d-flex sp-btwn">
+                      <div class="explore__card-caption-box">
+                        <h2 class="prgph">Action, RPG</h2>
+                        <h2 class="mini-h2">Funny Video Adventure</h2>
+                      </div>
+                      <a class="explore__card-caption-icon d-flex" href="#"
+                        ><img src="./assets/img/tiny-cloud.png" alt=""
+                      /></a>
                     </div>
-                    <a class="explore__card-caption-icon d-flex" href="#"
-                      ><img src="./assets/img/tiny-cloud.png" alt=""
-                    /></a>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="column column-lg-6 column-xl-4">
-            <div class="row">
-              <div class="column column-md-6 column-lg-12">
-                <div class="card half-card explore__card card--1x hover">
-                  <img
-                    class="card-img"
-                    src="./assets/img/empty-box-img.png"
-                    alt=""
-                  />
-                  <div class="card-caption d-flex sp-btwn">
-                    <div class="explore__card-caption-box">
-                      <h2 class="prgph">Action, RPG</h2>
-                      <h2 class="mini-h2">Funny Video Adventure</h2>
+            <div class="column column-lg-6 column-xl-4">
+              <div class="row">
+                <div class="column column-md-6 column-lg-12">
+                  <div class="card half-card explore__card card--1x hover">
+                    <img
+                      class="card-img"
+                      src="./assets/img/empty-box-img.png"
+                      alt=""
+                    />
+                    <div class="card-caption d-flex sp-btwn">
+                      <div class="explore__card-caption-box">
+                        <h2 class="prgph">Action, RPG</h2>
+                        <h2 class="mini-h2">Funny Video Adventure</h2>
+                      </div>
+                      <a class="explore__card-caption-icon d-flex" href="#"
+                        ><img src="./assets/img/tiny-cloud.png" alt=""
+                      /></a>
                     </div>
-                    <a class="explore__card-caption-icon d-flex" href="#"
-                      ><img src="./assets/img/tiny-cloud.png" alt=""
-                    /></a>
                   </div>
                 </div>
-              </div>
-              <div class="column column-md-6 column-lg-12">
-                <div class="card half-card explore__card card--1x hover">
-                  <img
-                    class="card-img"
-                    src="./assets/img/empty-box-img.png"
-                    alt=""
-                  />
-                  <div class="card-caption d-flex sp-btwn">
-                    <div class="explore__card-caption-box">
-                      <h2 class="prgph">Action, RPG</h2>
-                      <h2 class="mini-h2">Funny Video Adventure</h2>
+                <div class="column column-md-6 column-lg-12">
+                  <div class="card half-card explore__card card--1x hover">
+                    <img
+                      class="card-img"
+                      src="./assets/img/empty-box-img.png"
+                      alt=""
+                    />
+                    <div class="card-caption d-flex sp-btwn">
+                      <div class="explore__card-caption-box">
+                        <h2 class="prgph">Action, RPG</h2>
+                        <h2 class="mini-h2">Funny Video Adventure</h2>
+                      </div>
+                      <a class="explore__card-caption-icon d-flex" href="#"
+                        ><img src="./assets/img/tiny-cloud.png" alt=""
+                      /></a>
                     </div>
-                    <a class="explore__card-caption-icon d-flex" href="#"
-                      ><img src="./assets/img/tiny-cloud.png" alt=""
-                    /></a>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="explore__content__btn d-flex">
-            <a class="btn btn-fnt" href="#">Watch All</a>
+            <div class="explore__content__btn d-flex">
+              <a class="btn btn-fnt btn-color" href="#">Watch All</a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <div class="overlay--mid p-absolute"></div>
+    </div>
     <!--PORTFOLIO-->
 
     <section id="features">
@@ -297,6 +327,7 @@
         </div>
       </div>
     </section>
+
     <!--FEATURES-->
 
     <section id="process">
@@ -314,24 +345,48 @@
           <div class="column">
             <div class="carousel">
               <div class="dummy--box p-relative">
-                <img src="./assets/img/vrplayer.png" alt="" />
+                <img src="./assets/img/tiny-cloud.png" alt="dummy__image" />
                 <div class="process__small-card p-absolute">
                   <span>01</span>
-                  <h3 class="title-row-s p-absolute">Market Research</h3>
-                  <p class="txt-prgph">
+                  <h3 class="h2-sm">Market Research</h3>
+                  <p class="prgph">
                     Game Development is the art of creating games and describes
                     the design.
                   </p>
                 </div>
               </div>
-              <div class="dummy--box">
-                <img src="./assets/img/services-img.svg" alt="" />
+              <div class="dummy--box p-relative">
+                <img src="./assets/img/award-2.png" alt="dummy__image" />
+                <div class="process__small-card p-absolute">
+                  <span>01</span>
+                  <h3 class="h2-sm">Market Research</h3>
+                  <p class="prgph">
+                    Game Development is the art of creating games and describes
+                    the design.
+                  </p>
+                </div>
               </div>
-              <div class="dummy--box">
-                <img src="./assets/img/hero-background.svg" alt="" />
+              <div class="dummy--box p-relative">
+                <img src="./assets/img/award-3.png" alt="dummy__image" />
+                <div class="process__small-card p-absolute">
+                  <span>01</span>
+                  <h3 class="h2-sm">Market Research</h3>
+                  <p class="prgph">
+                    Game Development is the art of creating games and describes
+                    the design.
+                  </p>
+                </div>
               </div>
-              <div class="dummy--box">
-                <img src="./assets/img/Polygon-1.svg" alt="" />
+              <div class="dummy--box p-relative">
+                <img src="./assets/img/award-4.png" alt="" />
+                <div class="process__small-card p-absolute">
+                  <span>01</span>
+                  <h3 class="h2-sm">Market Research</h3>
+                  <p class="prgph">
+                    Game Development is the art of creating games and describes
+                    the design.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -493,7 +548,7 @@
           </div>
         </div>
         <div class="txt-center">
-          <a href="" class="btn btn-fnt events__btn">ALL EVENTS</a>
+          <a href="" class="btn btn-fnt events__btn btn-color">ALL EVENTS</a>
         </div>
       </div>
     </section>
@@ -679,7 +734,9 @@
           </div>
         </div>
         <div class="game-articles-btn txt-center">
-          <a href="" class="btn btn-fnt game-articles-btn-main"> SEE MORE</a>
+          <a href="" class="btn btn-fnt game-articles-btn-main btn-color">
+            SEE MORE</a
+          >
         </div>
       </div>
     </section>
@@ -697,7 +754,7 @@
               </p>
             </div>
             <div class="banner__btn-box d-flex">
-              <a href="#" class="btn-solid-pink btn-fnt">CONTACT US</a>
+              <a href="#" class="btn-solid-pink btn-fnt hover">CONTACT US</a>
             </div>
           </div>
           <img class="p-absolute" src="./assets/img/banner-pic.png" alt="" />
@@ -710,7 +767,7 @@
       <div class="container">
         <div class="row">
           <div class="column column-md-6 column-lg-3">
-            <div class="card footer-box">
+            <div class="card footer-box footer-box--logo">
               <img class="logo" src="./assets/img/game-logo.png" alt="" />
             </div>
           </div>
@@ -740,13 +797,13 @@
           </div>
           <div class="column column-md-6 column-lg-3">
             <div class="card footer-box footer-box-icons">
-              <a href="" class="circle_icon txt-center hover">
+              <a href="" class="circle_icon txt-center hover btn-color">
                 <i class="fab fa-facebook-f socmed_icon"></i
               ></a>
-              <a href="" class="circle_icon txt-center hover"
+              <a href="" class="circle_icon txt-center hover btn-color"
                 ><i class="fab fa-twitter socmed_icon"></i
               ></a>
-              <a href="" class="circle_icon txt-center hover"
+              <a href="" class="circle_icon txt-center hover btn-color"
                 ><i class="fab fa-instagram socmed_icon"></i
               ></a>
             </div>
