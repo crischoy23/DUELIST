@@ -15,3 +15,49 @@ header{
     width: 48px;
     padding:16px;
 }
+.menu-nav {
+  
+    
+   
+  
+  .navigation-bar li:hover a::before {
+    right: 0;
+    left: 0;
+  }
+  .navigation-bar li a {
+    color: #848484;
+    
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 0;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  .navigation-bar .nav-menu__link--odd:hover {
+    color: #e74c3c;
+  }
+  .navigation-bar .nav-menu__link--even:hover {
+    color: #a83ce7;
+  }
+  .navigation-bar a::before {
+    content: "";
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    
+  }
+  .navigation-bar a::before{
+    background-color: #e74c3c;
+  }
+  .navigation-bar a:hover::before {
+    right: 0;
+    left: 0;
+  }
+}
+
+
+

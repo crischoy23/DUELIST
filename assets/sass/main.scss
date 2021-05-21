@@ -26,7 +26,7 @@
   /* max-width: 570px; */
   margin: 0 auto;
   //background: green;
-  border: 5px solid black;
+  //border: 5px solid black;
   border-radius: 12px;
 }
 
@@ -39,9 +39,7 @@ section:not(#section-1) {
   padding-bottom: 80px;
 }
 
-section:nth-child(even) {
-  background: gray;
-}
+
 
 #navbar {
   height: 80px;

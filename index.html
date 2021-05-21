@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Duelist</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -15,57 +19,60 @@
       src="https://kit.fontawesome.com/c4cd33bb95.js"
       crossorigin="anonymous"
     ></script>
-
-    <style></style>
   </head>
 
   <body>
-    <header id="navbar">
-      <div class="container d-flex sp-btwn">
-        <img class="logo" src="./assets/img/game-logo.png" alt="" />
-        <ul class="nav-menu d-flex">
-          <li class="nav-menu__link"><a href="#">About</a></li>
-          <li class="nav-menu__link"><a href="#">Games</a></li>
-          <li class="nav-menu__link"><a href="#">Services</a></li>
-          <li class="nav-menu__link"><a href="#">Events</a></li>
-          <li class="nav-menu__link"><a href="#">Blog</a></li>
-        </ul>
-        <a href="#" class="btn nav__btn btn-fnt">Contact Us</a>
-        <a href="#" class="btn nav__btn--hamburger"
-          ><img src="./assets/img/hamburger.png" alt=""
-        /></a>
-      </div>
-    </header>
-    <!--HEADER-->
+    <div class="outer p-relative">
+      <header id="navbar" class="menu-nav">
+        <div class="container d-flex sp-btwn navigation-bar">
+          <img class="logo" src="./assets/img/game-logo.png" alt="" />
+          <ul class="nav-menu d-flex">
+            <li><a class="nav-menu__link--odd" href="#">About</a></li>
+            <li><a class="nav-menu__link--even" href="#">Games</a></li>
+            <li><a class="nav-menu__link--odd" href="#">Services</a></li>
+            <li><a class="nav-menu__link--even" href="#">Events</a></li>
+            <li><a class="nav-menu__link--odd" href="#">Blog</a></li>
+          </ul>
+          <a href="#" class="btn nav__btn btn-fnt">Contact Us</a>
+          <a href="#" class="btn nav__btn--hamburger"
+            ><img src="./assets/img/hamburger.svg" alt=""
+          /></a>
+        </div>
+      </header>
+      <!--HEADER-->
 
-    <section id="hero">
-      <div class="container">
-        <div class="row">
-          <div class="column column-md-6 order-1">
-            <div class="card hero__img">
-              <img src="./assets/img/hero_ng.png" alt="" />
+      <section id="hero">
+        <div class="container">
+          <div class="row">
+            <div class="column column-lg-6 order-1">
+              <div class="card hero__img">
+                <img src="./assets/img/hero_ng.png" alt="" />
+              </div>
             </div>
-          </div>
-          <div class="column column-md-6 order-0">
-            <div class="card hero__card-text mgr-s mgr-lg">
-              <span class="fnt-xs">Game development</span>
-              <h3 class="h2">The Art Of Creating Games</h3>
-              <p class="h3-sub">
-                Game Development is the art of creating games and describes the
-                design, development and release.
-              </p>
-              <div class="d-flex hero__content__btns">
-                <a class="btn-solid hero__btn btn-fnt" href="#">Portfolio</a>
-                <a class="play-btn d-flex" href="#"
-                  ><img src="./assets/img/play-btn.svg" alt="play-btn" />
-                </a>
-                <p class="prgrph-sm">Play Video</p>
+            <div class="column column-lg-6 order-0">
+              <div class="card hero__card-text mgr-s mgr-lg">
+                <span class="fnt-xs">Game development</span>
+                <h3 class="h2">The Art Of Creating Games</h3>
+                <p class="h3-sub">
+                  Game Development is the art of creating games and describes
+                  the design, development and release.
+                </p>
+                <div class="d-flex hero__content__btns">
+                  <a class="btn-solid hero__btn btn-fnt hover" href="#"
+                    >Portfolio</a
+                  >
+                  <a class="play-btn d-flex hover" href="#"
+                    ><img src="./assets/img/play-btn.svg" alt="play-btn" />
+                  </a>
+                  <p class="prgrph-sm">Play Video</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <div class="overlay top-overlay p-absolute"></div>
+    </div>
     <!--HERO-->
 
     <section id="about">
@@ -108,7 +115,7 @@
 
     <section id="explore">
       <div class="container">
-        <div class="txt-center">
+        <div class="txt-center section-title">
           <h2 class="fnt-xs">Game Portfolio</h2>
           <h2 class="h2">Explore Our Games</h2>
           <p class="prgph">
@@ -120,7 +127,7 @@
           <div class="column column-lg-6 column-xl-8">
             <div class="row">
               <div class="column column-md-6 column-lg-12 extension">
-                <div class="card half-card explore__card">
+                <div class="card half-card explore__card hover">
                   <img
                     class="card-img"
                     src="./assets/img/empty-box-img.png"
@@ -138,7 +145,7 @@
                 </div>
               </div>
               <div class="column column-md-6 column-lg-12">
-                <div class="card half-card explore__card big-card">
+                <div class="card half-card explore__card big-card hover">
                   <img
                     class="card-img card-img--big"
                     src="./assets/img/empty-box-img.png"
@@ -160,7 +167,7 @@
           <div class="column column-lg-6 column-xl-4">
             <div class="row">
               <div class="column column-md-6 column-lg-12">
-                <div class="card half-card explore__card card--1x">
+                <div class="card half-card explore__card card--1x hover">
                   <img
                     class="card-img"
                     src="./assets/img/empty-box-img.png"
@@ -178,7 +185,7 @@
                 </div>
               </div>
               <div class="column column-md-6 column-lg-12">
-                <div class="card half-card explore__card card--1x">
+                <div class="card half-card explore__card card--1x hover">
                   <img
                     class="card-img"
                     src="./assets/img/empty-box-img.png"
@@ -226,7 +233,7 @@
           <div class="column column-xl-6">
             <div class="row">
               <div class="column column-md-6">
-                <div class="card features__card--box p-relative">
+                <div class="card features__card--box hover p-relative">
                   <h2 class="h2-sm">Quality</h2>
                   <p class="prgrph-sm">
                     The sky was cloudless and of a deep dark blue spectacle.
@@ -241,7 +248,7 @@
                 </div>
               </div>
               <div class="column column-md-6">
-                <div class="card features__card--box p-relative">
+                <div class="card features__card--box hover p-relative">
                   <h2 class="h2-sm">Fast</h2>
                   <p class="prgrph-sm">
                     Cloudless and of a deep dark blue spectacle before us was.
@@ -256,7 +263,7 @@
                 </div>
               </div>
               <div class="column column-md-6">
-                <div class="card features__card--box p-relative">
+                <div class="card features__card--box hover p-relative">
                   <h2 class="h2-sm">Easy</h2>
                   <p class="prgrph-sm">
                     Deep dark blue spectacle before us was indeed sublime.
@@ -271,7 +278,7 @@
                 </div>
               </div>
               <div class="column column-md-6">
-                <div class="card features__card--box p-relative">
+                <div class="card features__card--box hover p-relative">
                   <h2 class="h2-sm">Reliably</h2>
                   <p class="prgrph-sm">
                     Blue spectacle before us was indeed sublime.
@@ -294,7 +301,7 @@
 
     <section id="process">
       <div class="container">
-        <div class="txt-center">
+        <div class="txt-center section-title">
           <h2 class="fnt-xs">Creation Process</h2>
           <h2 class="h2">How We Work</h2>
           <p class="prgph process__prgph">
@@ -304,35 +311,28 @@
           </p>
         </div>
         <div class="row">
-          <div class="column column-lg-8">
-            <div class="wrapper">
-              <!--<div class="prev-btn"></div>-->
-              <div class="slides-container">
-                <div class="slide-image">
-                  <img src="./assets/img/banner-pic.png" alt="" />
-                </div>
-                <div class="slide-image">
-                  <img src="./assets/img/favicon.png" alt="" />
-                </div>
-                <div class="slide-image">
-                  <img src="./assets/img/player-vr.png" alt="" />
+          <div class="column">
+            <div class="carousel">
+              <div class="dummy--box p-relative">
+                <img src="./assets/img/vrplayer.png" alt="" />
+                <div class="process__small-card p-absolute">
+                  <span>01</span>
+                  <h3 class="title-row-s p-absolute">Market Research</h3>
+                  <p class="txt-prgph">
+                    Game Development is the art of creating games and describes
+                    the design.
+                  </p>
                 </div>
               </div>
-            </div>
-            <div class="navigation-dots d-flex">
-              <div class="single-dot active"></div>
-              <div class="single-dot"></div>
-              <div class="single-dot"></div>
-            </div>
-
-            <div class="process__small-card p-absolute">
-              carausel
-              <span>01</span>
-              <h3 class="h2-sm">Market Research</h3>
-              <p class="prgph">
-                Game Development is the art of creating games and describes the
-                design.
-              </p>
+              <div class="dummy--box">
+                <img src="./assets/img/services-img.svg" alt="" />
+              </div>
+              <div class="dummy--box">
+                <img src="./assets/img/hero-background.svg" alt="" />
+              </div>
+              <div class="dummy--box">
+                <img src="./assets/img/Polygon-1.svg" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -343,25 +343,25 @@
 
     <section id="numbers">
       <div class="container">
-        <div class="numbers__title txt-center">
+        <div class="numbers__title txt-center section-title">
           <h2 class="fnt-xs">Some Numbers</h2>
           <h2 class="h2 numbers__title">Games Have a Consistent Look</h2>
         </div>
         <div class="flexbox">
           <div class="flexbox d-flex">
-            <a class="numbers__box">
+            <a class="numbers__box hover">
               <h3 class="num h2-sm">7.300+</h3>
               <p class="prgph">The sky was cloudless</p>
             </a>
-            <a class="numbers__box">
+            <a class="numbers__box hover">
               <h3 class="num h2-sm">420<</h3>
               <p class="prgph">Deep dark blue</p>
             </a>
-            <a class="numbers__box">
+            <a class="numbers__box hover">
               <h3 class="num h2-sm">95%</h3>
               <p class="prgph">Creating games</p>
             </a>
-            <a class="numbers__box">
+            <a class="numbers__box hover">
               <h3 class="num h2-sm">0.002</h3>
               <p class="prgph">Describes the design</p>
             </a>
@@ -395,7 +395,7 @@
               <div class="services__content__btn d-flex">
                 <div class="polygon-box">
                   <img
-                    class="polygon__ring"
+                    class="polygon__ring hover"
                     src="./assets/img/pngpolygon.png"
                     alt=""
                   />
@@ -414,7 +414,7 @@
 
     <section id="game-events">
       <div class="container">
-        <div class="txt-center">
+        <div class="txt-center section-title">
           <h2 class="fnt-xs">Game Events</h2>
           <h2 class="h2">Welcome to Game Events</h2>
           <p class="prgph">
@@ -424,7 +424,7 @@
         </div>
         <div class="row">
           <div class="column column-md-6 column-xl-4">
-            <div class="card game-events__card-1 half-card">
+            <div class="card game-events__card-1 half-card hover">
               <img
                 class="card-img"
                 src="./assets/img/empty-box-img.png"
@@ -441,7 +441,7 @@
             </div>
           </div>
           <div class="column column-md-6 column-xl-4">
-            <div class="card game-events__card-2 half-card">
+            <div class="card game-events__card-2 half-card hover">
               <img
                 class="card-img"
                 src="./assets/img/empty-box-img.png"
@@ -458,7 +458,7 @@
             </div>
           </div>
           <div class="column column-md-6 column-xl-4">
-            <div class="card game-events__card-3 half-card">
+            <div class="card game-events__card-3 half-card hover">
               <img
                 class="card-img"
                 src="./assets/img/empty-box-img.png"
@@ -475,7 +475,7 @@
             </div>
           </div>
           <div class="column column-md-6 extension">
-            <div class="card game-events__card-3 half-card">
+            <div class="card game-events__card-3 half-card hover">
               <img
                 class="card-img"
                 src="./assets/img/empty-box-img.png"
@@ -590,7 +590,7 @@
 
     <section id="awards">
       <div class="container">
-        <div class="txt-center">
+        <div class="txt-center section-title">
           <h2 class="fnt-xs">Our Awards</h2>
           <h2 class="h2 awards__title">Most Famous Awards We Got</h2>
         </div>
@@ -607,7 +607,7 @@
 
     <section id="articles">
       <div class="container">
-        <div class="game-articles-txt txt-center">
+        <div class="game-articles-txt txt-center section-title">
           <h2 class="fnt-xs">OUR BLOG</h2>
           <h2 class="h2">Latest Game Articles</h2>
           <p class="prgph">
@@ -618,7 +618,7 @@
         </div>
         <div class="row">
           <div class="column column-md-6 column-xl-4">
-            <div class="card articles__card half-card">
+            <div class="card articles__card half-card hover">
               <img
                 class="card-img"
                 src="./assets/img/empty-box-img.png"
@@ -633,7 +633,7 @@
             </div>
           </div>
           <div class="column column-md-6 column-xl-4">
-            <div class="card articles__card half-card">
+            <div class="card articles__card half-card hover">
               <img
                 class="card-img"
                 src="./assets/img/empty-box-img.png"
@@ -648,7 +648,7 @@
             </div>
           </div>
           <div class="column column-md-6 column-xl-4">
-            <div class="card articles__card half-card">
+            <div class="card articles__card half-card hover">
               <img
                 class="card-img"
                 src="./assets/img/empty-box-img.png"
@@ -663,7 +663,7 @@
             </div>
           </div>
           <div class="column column-md-6 extension">
-            <div class="card articles__card half-card">
+            <div class="card articles__card half-card hover">
               <img
                 class="card-img"
                 src="./assets/img/empty-box-img.png"
@@ -730,7 +730,9 @@
             <div class="card footer-box">
               <span class="fnt-xs">Services</span>
               <ul>
-                <li><a class="prgph" href="#">Residential Spaces</a></li>
+                <li>
+                  <a class="prgph" href="#">Residential Spaces</a>
+                </li>
                 <li><a class="prgph" href="#">Public Spaces</a></li>
                 <li><a class="prgph" href="#">Commercial Spaces</a></li>
               </ul>
@@ -738,13 +740,13 @@
           </div>
           <div class="column column-md-6 column-lg-3">
             <div class="card footer-box footer-box-icons">
-              <a href="" class="circle_icon txt-center">
+              <a href="" class="circle_icon txt-center hover">
                 <i class="fab fa-facebook-f socmed_icon"></i
               ></a>
-              <a href="" class="circle_icon txt-center"
+              <a href="" class="circle_icon txt-center hover"
                 ><i class="fab fa-twitter socmed_icon"></i
               ></a>
-              <a href="" class="circle_icon txt-center"
+              <a href="" class="circle_icon txt-center hover"
                 ><i class="fab fa-instagram socmed_icon"></i
               ></a>
             </div>
@@ -765,6 +767,7 @@
     </footer>
     <!--FOOTER-->
 
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script>
       window.onscroll = () => {
         const navbar = document.querySelector("#navbar");
@@ -772,7 +775,11 @@
         if (this.scrollY <= 80) navbar.className = "";
         else navbar.className = "navbar--scroll";
       };
+
+      var flkty = new Flickity(".carousel", {
+        cellAlign: "center",
+        contain: true,
+      });
     </script>
-    <script src="main.js"></script>
   </body>
 </html>

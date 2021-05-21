@@ -28,6 +28,7 @@ img{
 }
 body{
  /* background-image: radial-gradient(#36377C, #181942);*/
-  background-image: radial-gradient(farthest-corner at 10% 90%, #36377C, #181942);
+  //background-image: radial-gradient(farthest-corner at 10% 90%, #36377C, #181942);
   /*background-image: radial-gradient(closest-corner at 100px, 100px, #36377C, #181942);*/
+  background: radial-gradient(50% 50% at 50% 50%, #36377C 0%, #181942 100%);
 }
