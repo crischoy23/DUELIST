@@ -1,3 +1,36 @@
+.player__box{
+
+    
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.player__box img{
+    object-fit: cover;
+}
+.no-float{
+    width: 100%;
+    height: 100%;
+}
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+    z-index:0;
+    width: 100%;
+}
+  
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
 .hero__img{
     background-image: url(./../img/pattern.png);
     background-repeat: no-repeat;
@@ -60,16 +93,47 @@ section{
 }
 
 //ABOUT
-    .about__content__btn-main{
-        padding:15px 30.32px 16px 30.68px;
+.about__content__btn-main{
+    padding:15px 30.32px 16px 30.68px;
+}
+   
+    #about img{
+        border-radius: 12px;
     }
-
+    
+    .about__cyborg{
+        width: 188px;
+        height:197px;
+        z-index: 0;
+        top:70px;
+        left:50px;
+    }
+    .about__keyboard{
+        height: 114px;
+        width:120px;
+        z-index: 1;
+        right: 50px;
+        top:217px;
+    }
+    
+    
     #about .about__img{
         background-image: url("./../img/about-pattern.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-size: cover;
+        //border:1px solid yellow;
+        height: 100%;
     }
+    #about .floating{
+        //border:1px solid red;
+        width: 100%;
+        height: 100%;
+        z-index: 777;
+        margin: 0;
+        
+    }
+
 
 //PORTFOLIO
 #explore .card--2x{
@@ -145,9 +209,9 @@ section{
     margin-bottom: 70px;
 }
 #process .row{
-    width: 970px;
+    //width: 970px;
     width: 100%;
-    height:500px;
+    height:509px;
     //background: rgb(116, 113, 113);
     margin: 0 auto;
     background-image: url(./../img/pattern.png);
@@ -165,6 +229,9 @@ section{
     margin-bottom: 14px;
     z-index: 888;
 }
+#process .column{
+    width:100%;
+}
 #process .process__small-card h3,
 #process .process__small-card p{
     color: $COLOR_TEXT;
@@ -175,8 +242,8 @@ section{
     width: 270px;
     height: 352px;
     padding:26px 32px;
-    top: 64px;
-    left:0;
+    bottom: 0px;
+    left:30px;
     border-radius: 12px;
     z-index: 1;
 
@@ -185,11 +252,10 @@ section{
 .dummy--box{
     width:100%;
     max-width:970px;
-    margin-left: 200px;
-    margin-right: 200px;
-    border: 2px solid red;
-    //background: rgb(54, 54, 148);
-    height: 500px;
+    
+    //border: 2px solid red;
+    
+    height: 509px;
     max-height: 500px;
     text-align:center;
     border-radius: 12px;
@@ -197,8 +263,9 @@ section{
 }
 .dummy--box img{
     max-width: 770px;
+    width: 100%;
    border-radius: 12px;
-   height: 100%;
+   height:205px
    //border: 2px solid yellow;
 }
 #process .carousel{
@@ -262,9 +329,34 @@ box-shadow: 0px 24px 48px rgba(0, 1, 44, 0.157184);
 }
 .services__card-img{
     background-image: url("./../img/services-pattern.png");
-        background-size: cover;
+        background-size: 550px;
         background-repeat: no-repeat;
         
+}
+#services img{
+    border-radius:12px;
+}
+.services__card-img{
+   
+    width: 100%;
+    background-size: cover;
+}
+#services .floating{
+    margin: 0;
+    width: 100%;
+}
+.double__img--lg{
+    height: 197px;
+    width: 188px;
+    top:100px;
+    left:50px;
+   
+}
+.double__img--sm{
+    width: 114px;
+    height: 120px;
+    left:180px;
+    top:50px;
 }
 
 //EVENTS
@@ -294,6 +386,13 @@ box-shadow: 0px 24px 48px rgba(0, 1, 44, 0.157184);
     max-width: 570px;
     margin: 0 auto;
     margin-bottom: 70px;
+}
+#game-events .img__box{
+    height: 240px;
+    width:100%
+}
+.img__box img{
+    border-radius: 12px 12px 0 0;
 }
 #game-events .row .prgph{
     margin-bottom: 12px;

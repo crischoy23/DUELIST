@@ -15,6 +15,11 @@
       href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./assets/img/fav-icon.png"
+    />
     <script
       src="https://kit.fontawesome.com/c4cd33bb95.js"
       crossorigin="anonymous"
@@ -70,8 +75,18 @@
         <div class="container">
           <div class="row">
             <div class="column column-lg-6 order-1">
-              <div class="card hero__img">
-                <img src="./assets/img/hero_ng.png" alt="" />
+              <div class="card hero__img p-relative">
+                <div class="p-absolute player__box">
+                  <img class="player" src="./assets/img/trial.png" alt="" />
+                </div>
+                <div class="no-float p-absolute">
+                  <img src="./assets/img/no-float.svg" alt="" />
+                </div>
+                <img
+                  class="floating"
+                  src="./assets/img/hero-float.svg"
+                  alt=""
+                />
               </div>
             </div>
             <div class="column column-lg-6 order-0">
@@ -103,13 +118,21 @@
     <section id="about">
       <div class="container">
         <div class="row">
-          <div class="column column-lg-6">
-            <div class="card about__img">
-              <img
-                class="about__pics"
-                src="./assets/img/left-pic.png"
-                alt="about__pics"
-              />
+          <div class="column column-lg-6 about-half">
+            <div class="card about__img p-relative">
+              <div class="about__cyborg p-absolute">
+                <img src="./assets/img/cyborg.jpg" alt="" />
+              </div>
+              <div class="about__keyboard p-absolute">
+                <img src="./assets/img/double-pic-1.jpg" alt="" />
+              </div>
+              <div class="floating">
+                <img
+                  class="about__pics"
+                  src="./assets/img/left-pic.png"
+                  alt="about__pics"
+                />
+              </div>
             </div>
           </div>
           <div class="column column-lg-6">
@@ -156,11 +179,13 @@
               <div class="row">
                 <div class="column column-md-6 column-lg-12 extension">
                   <div class="card half-card explore__card hover">
-                    <img
-                      class="card-img"
-                      src="./assets/img/empty-box-img.png"
-                      alt=""
-                    />
+                    <div class="img__box">
+                      <img
+                        class="card-img"
+                        src="./assets/img/game-2.jpg"
+                        alt=""
+                      />
+                    </div>
                     <div class="card-caption d-flex sp-btwn">
                       <div class="explore__card-caption-box">
                         <h2 class="prgph">Action, RPG</h2>
@@ -173,12 +198,16 @@
                   </div>
                 </div>
                 <div class="column column-md-6 column-lg-12">
-                  <div class="card half-card explore__card big-card hover">
-                    <img
-                      class="card-img card-img--big"
-                      src="./assets/img/empty-box-img.png"
-                      alt=""
-                    />
+                  <div
+                    class="card card-2 half-card explore__card big-card hover"
+                  >
+                    <div class="img__box">
+                      <img
+                        class="card-img card-img--big"
+                        src="./assets/img/game-6.jpg"
+                        alt=""
+                      />
+                    </div>
                     <div class="card-caption d-flex sp-btwn">
                       <div class="explore__card-caption-box">
                         <h2 class="prgph">Action, RPG</h2>
@@ -196,11 +225,13 @@
               <div class="row">
                 <div class="column column-md-6 column-lg-12">
                   <div class="card half-card explore__card card--1x hover">
-                    <img
-                      class="card-img"
-                      src="./assets/img/empty-box-img.png"
-                      alt=""
-                    />
+                    <div class="img__box">
+                      <img
+                        class="card-img"
+                        src="./assets/img/games-4.jpg"
+                        alt=""
+                      />
+                    </div>
                     <div class="card-caption d-flex sp-btwn">
                       <div class="explore__card-caption-box">
                         <h2 class="prgph">Action, RPG</h2>
@@ -214,11 +245,13 @@
                 </div>
                 <div class="column column-md-6 column-lg-12">
                   <div class="card half-card explore__card card--1x hover">
-                    <img
-                      class="card-img"
-                      src="./assets/img/empty-box-img.png"
-                      alt=""
-                    />
+                    <div class="img__box">
+                      <img
+                        class="card-img"
+                        src="./assets/img/rick-and-morty-b.jpg"
+                        alt=""
+                      />
+                    </div>
                     <div class="card-caption d-flex sp-btwn">
                       <div class="explore__card-caption-box">
                         <h2 class="prgph">Action, RPG</h2>
@@ -309,7 +342,7 @@
               </div>
               <div class="column column-md-6">
                 <div class="card features__card--box hover p-relative">
-                  <h2 class="h2-sm">Reliably</h2>
+                  <h2 class="h2-sm">Reliable</h2>
                   <p class="prgrph-sm">
                     Blue spectacle before us was indeed sublime.
                   </p>
@@ -345,7 +378,7 @@
           <div class="column">
             <div class="carousel">
               <div class="dummy--box p-relative">
-                <img src="./assets/img/services-img.svg" alt="" />
+                <img src="./assets/img/carousel-9.jpg" alt="" />
                 <div class="process__small-card p-absolute">
                   <span>01</span>
                   <h3 class="h2-sm">Market Research</h3>
@@ -356,7 +389,7 @@
                 </div>
               </div>
               <div class="dummy--box p-relative">
-                <img src="./assets/img/star-player.png" alt="" />
+                <img src="./assets/img/carousel-5.jpg" alt="" />
                 <div class="process__small-card p-absolute">
                   <span>01</span>
                   <h3 class="h2-sm">Market Research</h3>
@@ -367,7 +400,7 @@
                 </div>
               </div>
               <div class="dummy--box p-relative">
-                <img src="./assets/img/vrplayer.png" alt="" />
+                <img src="./assets/img/carousel-2.jpg" alt="" />
                 <div class="process__small-card p-absolute">
                   <span>01</span>
                   <h3 class="h2-sm">Market Research</h3>
@@ -378,7 +411,7 @@
                 </div>
               </div>
               <div class="dummy--box p-relative">
-                <img src="./assets/img/Polygon.svg" alt="" />
+                <img src="./assets/img/carousel-1.jpg" alt="" />
                 <div class="process__small-card p-absolute">
                   <span>01</span>
                   <h3 class="h2-sm">Market Research</h3>
@@ -431,10 +464,16 @@
         <div class="container">
           <div class="row">
             <div class="column column-lg-6">
-              <div class="card services__card-img">
+              <div class="card services__card-img p-relative">
+                <div class="double__img--lg p-absolute">
+                  <img src="./assets/img/gaming-keyboard.jpg" alt="" />
+                </div>
+                <div class="double__img--sm p-absolute">
+                  <img src="./assets/img/double-img-5.jpg" alt="" />
+                </div>
                 <img
-                  class="services__pics"
-                  src="./assets/img/services-img.svg"
+                  class="services__pics floating"
+                  src="./assets/img/service-pic.svg"
                   alt="services__pics"
                 />
               </div>
@@ -483,11 +522,9 @@
         <div class="row">
           <div class="column column-md-6 column-xl-4">
             <div class="card game-events__card-1 half-card hover">
-              <img
-                class="card-img"
-                src="./assets/img/empty-box-img.png"
-                alt=""
-              />
+              <div class="img__box">
+                <img class="card-img" src="./assets/img/events-1.jpg" alt="" />
+              </div>
               <span class="game-events__timer-1"
                 ><img class="timer-img" src="./assets/img/timer.svg" alt="" />3d
                 12h:35m:41s</span
@@ -500,11 +537,9 @@
           </div>
           <div class="column column-md-6 column-xl-4">
             <div class="card game-events__card-2 half-card hover">
-              <img
-                class="card-img"
-                src="./assets/img/empty-box-img.png"
-                alt=""
-              />
+              <div class="img__box">
+                <img class="card-img" src="./assets/img/game-3.jpg" alt="" />
+              </div>
               <span class="game-events__timer-2"
                 ><img class="timer-img" src="./assets/img/timer.svg" alt="" />3d
                 12h:35m:42s</span
@@ -517,11 +552,9 @@
           </div>
           <div class="column column-md-6 column-xl-4">
             <div class="card game-events__card-3 half-card hover">
-              <img
-                class="card-img"
-                src="./assets/img/empty-box-img.png"
-                alt=""
-              />
+              <div class="img__box">
+                <img class="card-img" src="./assets/img/events-3.jpg" alt="" />
+              </div>
               <span class="game-events__timer-3"
                 ><img class="timer-img" src="./assets/img/timer.svg" alt="" />
                 3d 12h:35m:43s</span
@@ -534,11 +567,13 @@
           </div>
           <div class="column column-md-6 extension">
             <div class="card game-events__card-3 half-card hover">
-              <img
-                class="card-img"
-                src="./assets/img/empty-box-img.png"
-                alt=""
-              />
+              <div class="img__box">
+                <img
+                  class="card-img"
+                  src="./assets/img/empty-box-img.png"
+                  alt=""
+                />
+              </div>
               <span class="game-events__timer-3"
                 ><img class="timer-img" src="./assets/img/timer.svg" alt="" />
                 3d 12h:35m:43s</span
@@ -678,11 +713,13 @@
           <div class="row">
             <div class="column column-md-6 column-xl-4">
               <div class="card articles__card half-card hover">
-                <img
-                  class="card-img"
-                  src="./assets/img/empty-box-img.png"
-                  alt=""
-                />
+                <div class="img__box">
+                  <img
+                    class="card-img"
+                    src="./assets/img/articles-1.jpg"
+                    alt=""
+                  />
+                </div>
                 <div class="card-caption">
                   <h2 class="mini-h2">
                     The Complete Guide Average Video Game Designer Salary
@@ -693,11 +730,13 @@
             </div>
             <div class="column column-md-6 column-xl-4">
               <div class="card articles__card half-card hover">
-                <img
-                  class="card-img"
-                  src="./assets/img/empty-box-img.png"
-                  alt=""
-                />
+                <div class="img__box">
+                  <img
+                    class="card-img"
+                    src="./assets/img/articles-2.jpg"
+                    alt=""
+                  />
+                </div>
                 <div class="card-caption">
                   <h2 class="mini-h2">
                     The 5 Decisive Components of Outstanding Learning Games
@@ -708,11 +747,13 @@
             </div>
             <div class="column column-md-6 column-xl-4">
               <div class="card articles__card half-card hover">
-                <img
-                  class="card-img"
-                  src="./assets/img/empty-box-img.png"
-                  alt=""
-                />
+                <div class="img__box">
+                  <img
+                    class="card-img"
+                    src="./assets/img/articles-3.jpg"
+                    alt=""
+                  />
+                </div>
                 <div class="card-caption">
                   <h2 class="mini-h2">
                     Become a Gaming Programmer: Step-by-Step Career Guide
@@ -723,11 +764,13 @@
             </div>
             <div class="column column-md-6 extension">
               <div class="card articles__card half-card hover">
-                <img
-                  class="card-img"
-                  src="./assets/img/empty-box-img.png"
-                  alt=""
-                />
+                <div class="img__box">
+                  <img
+                    class="card-img"
+                    src="./assets/img/empty-box-img.png"
+                    alt=""
+                  />
+                </div>
                 <div class="card-caption">
                   <h2 class="mini-h2">
                     Become a Gaming Programmer: Step-by-Step Career Guide

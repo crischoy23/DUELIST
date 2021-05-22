@@ -14,6 +14,9 @@
 
 
     //PROCESS
+    #process .process__small-card { 
+        left:120px;
+    }
 
     //NUMBERS
     #numbers .flexbox{
@@ -23,6 +26,28 @@
   }
 
     //SERVICES
+    #services .h2{
+        max-width: 423px;
+    }
+    .services__card-img{
+        width: 100%;
+        background-size: cover;
+    }
+    #services .floating{
+        margin: 0;
+        width: 100%;
+    }
+    .double__img--lg{
+        height: 450px;
+        width: 400px;
+        top:50px;
+       
+    }
+    .double__img--sm{
+        width: 200px;
+        height: 250px;
+        left:250px;
+    }
 
     //EVENTS
 
@@ -61,6 +86,36 @@
     //HERO
     
     //ABOUT
+    .about__cyborg{
+        width: 400px;
+        height:450px;
+        z-index: 0;
+    }
+    .about__keyboard{
+        height: 300px;
+        width:250px;
+        z-index: 1;
+        right: 90px;
+        top:350px;
+    }
+    
+    
+    #about .about__img{
+        background-image: url("./../img/about-pattern.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+    
+    #about .floating{
+        //border:1px solid red;
+        width: 100%;
+        height: 100%;
+        z-index: 777;
+        margin: 0;
+        
+    }
 
     //PORTFOLIO
 
@@ -80,16 +135,84 @@
         padding-top: 20px;
     }
 
-    //PROCESS
+   
 
     //NUMBERS
     #numbers .flexbox{
         width: 80%;
     }
+     //PROCESS
+    #process .row{
+        width: 970px;
+        width: 100%;
+        height:500px;
+        //background: rgb(116, 113, 113);
+        margin: 0 auto;
+        background-image: url(./../img/pattern.png);
+        background-repeat: no-repeat;
+       background-size: cover;
+       background-size: 600px;
+        background-position: right 30px;
+    }
+    #process .process__small-card {
+        background: $COLOR_WHITE;
+        width: 270px;
+        height: 352px;
+        padding:26px 32px;
+        top: 64px;
+        left:0;
+        border-radius: 12px;
+        z-index: 1;
+    
+    }   
+.dummy--box{
+    width:100%;
+    max-width:970px;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 500px;
+    max-height: 500px;
+    text-align:center;
+    border-radius: 12px;
+    overflow:visible;
+}
+.dummy--box img{
+    max-width: 770px;
+   border-radius: 12px;
+   height: 100%;
+   //border: 2px solid yellow;
+}
+#process .carousel{
+    overflow: visible;
+    margin: 0 auto;
+    max-width:970px;
+    //background: rgb(50, 150, 140);
+    height: 100%;
+    border-radius: 12px;
+}
 
     //SERVICES
     #services .h2{
         max-width: 423px;
+    }
+    .services__card-img{
+        width: 70%;
+        background-size: cover;
+    }
+    #services .floating{
+        margin: 0;
+        width: 100%;
+    }
+    .double__img--lg{
+        height: 420px;
+        width: 424px;
+        top:50px;
+        left:50px;
+    }
+    .double__img--sm{
+        width: 197px;
+        height: 207px;
+        left:380px;
     }
     //EVENTS
 
@@ -200,11 +323,57 @@
     .about__img{
         padding-top: 30px;
     }
+    .about__cyborg{
+        width: 250px;
+        height:21.25rem;
+        z-index: 0;
+    }
+    .about__keyboard{
+        height: 12.9375rem;
+        width:150px;
+        z-index: 1;
+        right: 90px;
+        top:217px;
+    }
+    
+
+    #about .about__img{
+        background-image: url("./../img/about-pattern.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        //border:1px solid yellow;
+        height: 100%;
+    }
+    #about .floating{
+        //border:1px solid red;
+        width: 100%;
+        height: 100%;
+        z-index: 777;
+        margin: 0;
+        
+    }
     //PORTFOLIO
 
     //FEATURES
 
     //PROCESS
+    #services .floating{
+        margin: 0;
+        
+    }
+    .double__img--lg{
+        height: 340px;
+        width: 324px;
+        top:70px;
+        left:20px;
+    }
+    .double__img--sm{
+        width: 197px;
+        height: 207px;
+        left:230px;
+        top:50px
+    }
 
     //NUMBERS
     #numbers .flexbox{
@@ -269,6 +438,39 @@
     .about__img{
         padding-top: 0px;
     }
+    .about__cyborg{
+        width: 324px;
+        height:340px;
+        z-index: 0;
+        top:30px;
+        left:100px;
+    }
+    .about__keyboard{
+        height: 207px;
+        width:197px;
+        z-index: 1;
+        left: 281px;
+        top:247px;
+    }
+    
+    
+
+    #about .about__img{
+        background-image: url("./../img/about-pattern.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 580px;
+        height: 100%;
+        
+    }
+    #about .floating{
+        //border:1px solid red;
+        width: 100%;
+        height: 100%;
+        z-index: 777;
+        margin: 0;
+        
+    }
     //PORTFOLIO
     #explore .extension{
         display: none;
@@ -310,6 +512,24 @@
         padding: 60px 0 60px 100px;
         
     }
+    #services .floating{
+        margin: 0;
+        
+    }
+    .double__img--lg{
+        height: 340px;
+        width: 324px;
+        top:120px;
+        left:100px;
+    }
+    .double__img--sm{
+        width: 197px;
+        height: 207px;
+        left:330px;
+        top:70px
+    }
+    
+   
     //EVENTS
     .extension{
         display:none;

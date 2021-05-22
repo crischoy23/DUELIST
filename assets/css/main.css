@@ -419,6 +419,11 @@ body {
           transform: scale(1.03);
 }
 
+*img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -733,6 +738,10 @@ body {
   }
 }
 
+section {
+  overflow-x: hidden;
+}
+
 header {
   padding: 10px 15px;
   background: #000;
@@ -797,6 +806,67 @@ header {
 .menu-nav .navigation-bar a:hover::before {
   right: 0;
   left: 0;
+}
+
+.player__box {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.player__box img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.no-float {
+  width: 100%;
+  height: 100%;
+}
+
+.floating {
+  -webkit-animation-name: floating;
+          animation-name: floating;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+  z-index: 0;
+  width: 100%;
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 15px);
+            transform: translate(0, 15px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@keyframes floating {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 15px);
+            transform: translate(0, 15px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
 }
 
 .hero__img {
@@ -864,11 +934,39 @@ section {
   padding: 15px 30.32px 16px 30.68px;
 }
 
+#about img {
+  border-radius: 12px;
+}
+
+.about__cyborg {
+  width: 188px;
+  height: 197px;
+  z-index: 0;
+  top: 70px;
+  left: 50px;
+}
+
+.about__keyboard {
+  height: 114px;
+  width: 120px;
+  z-index: 1;
+  right: 50px;
+  top: 217px;
+}
+
 #about .about__img {
   background-image: url("./../img/about-pattern.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
+}
+
+#about .floating {
+  width: 100%;
+  height: 100%;
+  z-index: 777;
+  margin: 0;
 }
 
 #explore .card--2x {
@@ -946,9 +1044,8 @@ section {
 }
 
 #process .row {
-  width: 970px;
   width: 100%;
-  height: 500px;
+  height: 509px;
   margin: 0 auto;
   background-image: url(./../img/pattern.png);
   background-repeat: no-repeat;
@@ -967,6 +1064,10 @@ section {
   z-index: 888;
 }
 
+#process .column {
+  width: 100%;
+}
+
 #process .process__small-card h3,
 #process .process__small-card p {
   color: #333333;
@@ -977,8 +1078,8 @@ section {
   width: 270px;
   height: 352px;
   padding: 26px 32px;
-  top: 64px;
-  left: 0;
+  bottom: 0px;
+  left: 30px;
   border-radius: 12px;
   z-index: 1;
 }
@@ -986,10 +1087,7 @@ section {
 .dummy--box {
   width: 100%;
   max-width: 970px;
-  margin-left: 200px;
-  margin-right: 200px;
-  border: 2px solid red;
-  height: 500px;
+  height: 509px;
   max-height: 500px;
   text-align: center;
   border-radius: 12px;
@@ -998,8 +1096,9 @@ section {
 
 .dummy--box img {
   max-width: 770px;
+  width: 100%;
   border-radius: 12px;
-  height: 100%;
+  height: 205px;
 }
 
 #process .carousel {
@@ -1071,8 +1170,36 @@ section {
 
 .services__card-img {
   background-image: url("./../img/services-pattern.png");
-  background-size: cover;
+  background-size: 550px;
   background-repeat: no-repeat;
+}
+
+#services img {
+  border-radius: 12px;
+}
+
+.services__card-img {
+  width: 100%;
+  background-size: cover;
+}
+
+#services .floating {
+  margin: 0;
+  width: 100%;
+}
+
+.double__img--lg {
+  height: 197px;
+  width: 188px;
+  top: 100px;
+  left: 50px;
+}
+
+.double__img--sm {
+  width: 114px;
+  height: 120px;
+  left: 180px;
+  top: 50px;
 }
 
 .timer-img {
@@ -1104,6 +1231,15 @@ section {
   max-width: 570px;
   margin: 0 auto;
   margin-bottom: 70px;
+}
+
+#game-events .img__box {
+  height: 240px;
+  width: 100%;
+}
+
+.img__box img {
+  border-radius: 12px 12px 0 0;
 }
 
 #game-events .row .prgph {
@@ -1329,12 +1465,36 @@ footer .prgph {
   .container {
     max-width: 540px;
   }
+  #process .process__small-card {
+    left: 120px;
+  }
   #numbers .flexbox {
     padding: 0;
     width: 95%;
     -webkit-box-pack: justify !important;
         -ms-flex-pack: justify !important;
             justify-content: space-between !important;
+  }
+  #services .h2 {
+    max-width: 423px;
+  }
+  .services__card-img {
+    width: 100%;
+    background-size: cover;
+  }
+  #services .floating {
+    margin: 0;
+    width: 100%;
+  }
+  .double__img--lg {
+    height: 450px;
+    width: 400px;
+    top: 50px;
+  }
+  .double__img--sm {
+    width: 200px;
+    height: 250px;
+    left: 250px;
   }
   .reviews__polygon-box .polygon__img {
     width: 120px;
@@ -1354,6 +1514,31 @@ footer .prgph {
   .container {
     max-width: 720px;
   }
+  .about__cyborg {
+    width: 400px;
+    height: 450px;
+    z-index: 0;
+  }
+  .about__keyboard {
+    height: 300px;
+    width: 250px;
+    z-index: 1;
+    right: 90px;
+    top: 350px;
+  }
+  #about .about__img {
+    background-image: url("./../img/about-pattern.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+  #about .floating {
+    width: 100%;
+    height: 100%;
+    z-index: 777;
+    margin: 0;
+  }
   #features .column-md-6:nth-child(1),
   #features .column-md-6:nth-child(3) {
     padding-top: 50px;
@@ -1370,8 +1555,71 @@ footer .prgph {
   #numbers .flexbox {
     width: 80%;
   }
+  #process .row {
+    width: 970px;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    background-image: url(./../img/pattern.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 600px;
+    background-position: right 30px;
+  }
+  #process .process__small-card {
+    background: #fff;
+    width: 270px;
+    height: 352px;
+    padding: 26px 32px;
+    top: 64px;
+    left: 0;
+    border-radius: 12px;
+    z-index: 1;
+  }
+  .dummy--box {
+    width: 100%;
+    max-width: 970px;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 500px;
+    max-height: 500px;
+    text-align: center;
+    border-radius: 12px;
+    overflow: visible;
+  }
+  .dummy--box img {
+    max-width: 770px;
+    border-radius: 12px;
+    height: 100%;
+  }
+  #process .carousel {
+    overflow: visible;
+    margin: 0 auto;
+    max-width: 970px;
+    height: 100%;
+    border-radius: 12px;
+  }
   #services .h2 {
     max-width: 423px;
+  }
+  .services__card-img {
+    width: 70%;
+    background-size: cover;
+  }
+  #services .floating {
+    margin: 0;
+    width: 100%;
+  }
+  .double__img--lg {
+    height: 420px;
+    width: 424px;
+    top: 50px;
+    left: 50px;
+  }
+  .double__img--sm {
+    width: 197px;
+    height: 207px;
+    left: 380px;
   }
   #reviews .h2 {
     max-width: 288px;
@@ -1474,6 +1722,46 @@ footer .prgph {
   .about__img {
     padding-top: 30px;
   }
+  .about__cyborg {
+    width: 250px;
+    height: 21.25rem;
+    z-index: 0;
+  }
+  .about__keyboard {
+    height: 12.9375rem;
+    width: 150px;
+    z-index: 1;
+    right: 90px;
+    top: 217px;
+  }
+  #about .about__img {
+    background-image: url("./../img/about-pattern.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+  #about .floating {
+    width: 100%;
+    height: 100%;
+    z-index: 777;
+    margin: 0;
+  }
+  #services .floating {
+    margin: 0;
+  }
+  .double__img--lg {
+    height: 340px;
+    width: 324px;
+    top: 70px;
+    left: 20px;
+  }
+  .double__img--sm {
+    width: 197px;
+    height: 207px;
+    left: 230px;
+    top: 50px;
+  }
   #numbers .flexbox {
     width: 100%;
   }
@@ -1519,6 +1807,33 @@ footer .prgph {
   .about__img {
     padding-top: 0px;
   }
+  .about__cyborg {
+    width: 324px;
+    height: 340px;
+    z-index: 0;
+    top: 30px;
+    left: 100px;
+  }
+  .about__keyboard {
+    height: 207px;
+    width: 197px;
+    z-index: 1;
+    left: 281px;
+    top: 247px;
+  }
+  #about .about__img {
+    background-image: url("./../img/about-pattern.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 580px;
+    height: 100%;
+  }
+  #about .floating {
+    width: 100%;
+    height: 100%;
+    z-index: 777;
+    margin: 0;
+  }
   #explore .extension {
     display: none;
   }
@@ -1543,6 +1858,21 @@ footer .prgph {
   }
   .services__card-text {
     padding: 60px 0 60px 100px;
+  }
+  #services .floating {
+    margin: 0;
+  }
+  .double__img--lg {
+    height: 340px;
+    width: 324px;
+    top: 120px;
+    left: 100px;
+  }
+  .double__img--sm {
+    width: 197px;
+    height: 207px;
+    left: 330px;
+    top: 70px;
   }
   .extension {
     display: none;
