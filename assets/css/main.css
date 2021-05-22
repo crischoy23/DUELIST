@@ -833,7 +833,6 @@ header {
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  margin-left: 30px;
   margin-top: 5px;
   z-index: 0;
   width: 100%;
@@ -873,6 +872,10 @@ header {
   background-image: url(./../img/pattern.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#hero .row {
+  padding-bottom: 0;
 }
 
 .overlay {
@@ -1047,11 +1050,6 @@ section {
   width: 100%;
   height: 509px;
   margin: 0 auto;
-  background-image: url(./../img/pattern.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-size: 600px;
-  background-position: right 30px;
 }
 
 #process .h2-sm {
@@ -1560,11 +1558,6 @@ footer .prgph {
     width: 100%;
     height: 500px;
     margin: 0 auto;
-    background-image: url(./../img/pattern.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 600px;
-    background-position: right 30px;
   }
   #process .process__small-card {
     background: #fff;
@@ -1613,7 +1606,7 @@ footer .prgph {
   .double__img--lg {
     height: 420px;
     width: 424px;
-    top: 50px;
+    top: 150px;
     left: 50px;
   }
   .double__img--sm {
@@ -2080,7 +2073,7 @@ section:not(#section-1) {
 }
 
 #navbar.navbar--scroll {
-  background: black;
+  background: #6357F6;
 }
 
 @media screen and (min-width: 768px) {

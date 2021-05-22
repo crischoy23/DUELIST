@@ -107,7 +107,7 @@
         background-size: cover;
         height: 100%;
     }
-    
+
     #about .floating{
         //border:1px solid red;
         width: 100%;
@@ -148,11 +148,7 @@
         height:500px;
         //background: rgb(116, 113, 113);
         margin: 0 auto;
-        background-image: url(./../img/pattern.png);
-        background-repeat: no-repeat;
-       background-size: cover;
-       background-size: 600px;
-        background-position: right 30px;
+       
     }
     #process .process__small-card {
         background: $COLOR_WHITE;
@@ -206,7 +202,7 @@
     .double__img--lg{
         height: 420px;
         width: 424px;
-        top:50px;
+        top:150px;
         left:50px;
     }
     .double__img--sm{
