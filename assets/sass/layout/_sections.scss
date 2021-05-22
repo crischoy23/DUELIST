@@ -237,14 +237,16 @@ section{
 }
 #process .process__small-card {
     background: $COLOR_WHITE;
-    width: 270px;
+    width:100%;
+    max-width: 270px;
     height: 352px;
     padding:26px 32px;
     bottom: 0px;
-    left:30px;
+    left:50%;
+    transform: translateX(-50%);
     border-radius: 12px;
     z-index: 1;
-
+// try
 }
 
 .dummy--box{
