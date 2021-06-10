@@ -41,22 +41,7 @@ section:not(#section-1) {
 
 
 
-#navbar {
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: transparent;
-  //border: 5px solid black;
-  z-index:999;
 
-  &.navbar--scroll {
-    background: $COLOR-BTN-BLUE;
-  }
-}
 
 @media screen and (min-width: 768px) {
   

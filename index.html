@@ -24,40 +24,16 @@
       src="https://kit.fontawesome.com/c4cd33bb95.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
     <div class="outer p-relative">
-      <!--<div class="nav">
-        <input type="checkbox" id="nav-check" />
-        <div class="nav-header">
-          <div class="nav-title">JoGeek</div>
-        </div>
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-
-        <div class="nav-links">
-          <a href="//github.io/jo_geek" target="_blank">About</a>
-          <a href="http://stackoverflow.com/users/4084003/" target="_blank"
-            >Games</a
-          >
-          <a href="https://codepen.io/jo_Geek/" target="_blank">Services</a>
-          <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank"
-            >Events</a
-          >
-          <a href="https://codepen.io/jo_Geek/" target="_blank">Blog</a>
-        </div>
-      </div>-->
       <header id="navbar" class="menu-nav">
         <div class="container d-flex sp-btwn navigation-bar">
           <img class="logo" src="./assets/img/game-logo.png" alt="" />
           <ul class="nav-menu d-flex">
-            <li><a class="link-txt" href="#">About</a></li>
+            <li><a class="link-txt active" href="#">About</a></li>
             <li><a class="link-txt" href="#">Games</a></li>
             <li><a class="link-txt" href="#">Services</a></li>
             <li><a class="link-txt" href="#">Events</a></li>
@@ -75,22 +51,30 @@
         <div class="container">
           <div class="row">
             <div class="column column-lg-6 order-1">
-              <div class="card hero__img p-relative">
-                <div class="p-absolute player__box">
+              <div
+                class="card hero__img p-relative"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <div class="p-absolute player__box floating">
                   <img class="player" src="./assets/img/trial.png" alt="" />
                 </div>
                 <div class="no-float p-absolute">
                   <img src="./assets/img/no-float.svg" alt="" />
                 </div>
                 <img
-                  class="floating"
+                  class="floating float-img"
                   src="./assets/img/hero-float.svg"
                   alt=""
                 />
               </div>
             </div>
             <div class="column column-lg-6 order-0">
-              <div class="card hero__card-text mgr-s mgr-lg">
+              <div
+                class="card hero__card-text mgr-s mgr-lg"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
                 <span class="fnt-xs">Game development</span>
                 <h3 class="h2">The Art Of Creating Games</h3>
                 <p class="h3-sub">
@@ -119,7 +103,11 @@
       <div class="container">
         <div class="row">
           <div class="column column-lg-6 about-half">
-            <div class="card about__img p-relative">
+            <div
+              class="card about__img p-relative"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <div class="about__cyborg p-absolute">
                 <img src="./assets/img/cyborg.jpg" alt="" />
               </div>
@@ -136,7 +124,11 @@
             </div>
           </div>
           <div class="column column-lg-6">
-            <div class="card about__card-text mgl-lg">
+            <div
+              class="card about__card-text mgl-lg"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
               <h2 class="fnt-xs">About Us</h2>
               <h2 class="h2">Design, Development and Release of a Game</h2>
               <h4 class="h3-sub">
@@ -166,7 +158,11 @@
     <div class="mid p-relative">
       <section id="explore">
         <div class="container">
-          <div class="txt-center section-title">
+          <div
+            class="txt-center section-title"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <h2 class="fnt-xs">Game Portfolio</h2>
             <h2 class="h2">Explore Our Games</h2>
             <p class="prgph">
@@ -178,7 +174,11 @@
             <div class="column column-lg-6 column-xl-8">
               <div class="row">
                 <div class="column column-md-6 column-lg-12 extension">
-                  <div class="card half-card explore__card hover">
+                  <div
+                    class="card half-card explore__card hover"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                  >
                     <div class="img__box">
                       <img
                         class="card-img"
@@ -200,6 +200,8 @@
                 <div class="column column-md-6 column-lg-12">
                   <div
                     class="card card-2 half-card explore__card big-card hover"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
                   >
                     <div class="img__box">
                       <img
@@ -224,7 +226,11 @@
             <div class="column column-lg-6 column-xl-4">
               <div class="row">
                 <div class="column column-md-6 column-lg-12">
-                  <div class="card half-card explore__card card--1x hover">
+                  <div
+                    class="card half-card explore__card card--1x hover"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                  >
                     <div class="img__box">
                       <img
                         class="card-img"
@@ -244,7 +250,11 @@
                   </div>
                 </div>
                 <div class="column column-md-6 column-lg-12">
-                  <div class="card half-card explore__card card--1x hover">
+                  <div
+                    class="card half-card explore__card card--1x hover"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                  >
                     <div class="img__box">
                       <img
                         class="card-img"
@@ -279,7 +289,11 @@
       <div class="container">
         <div class="row">
           <div class="column column-xl-6">
-            <div class="card features__card-text mgr-s mgr-lg">
+            <div
+              class="card features__card-text mgr-s mgr-lg"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <h2 class="fnt-xs">Features</h2>
               <h3 class="h2">Most Rewarding Games on Market</h3>
               <h4 class="h3-sub">
@@ -296,7 +310,11 @@
           <div class="column column-xl-6">
             <div class="row">
               <div class="column column-md-6">
-                <div class="card features__card--box hover p-relative">
+                <div
+                  class="card features__card--box hover p-relative"
+                  data-aos="flip-down"
+                  data-aos-duration="1000"
+                >
                   <h2 class="h2-sm">Quality</h2>
                   <p class="prgrph-sm">
                     The sky was cloudless and of a deep dark blue spectacle.
@@ -311,7 +329,10 @@
                 </div>
               </div>
               <div class="column column-md-6">
-                <div class="card features__card--box hover p-relative">
+                <div
+                  class="card features__card--box hover p-relative"
+                  data-aos="flip-down"
+                >
                   <h2 class="h2-sm">Fast</h2>
                   <p class="prgrph-sm">
                     Cloudless and of a deep dark blue spectacle before us was.
@@ -326,7 +347,11 @@
                 </div>
               </div>
               <div class="column column-md-6">
-                <div class="card features__card--box hover p-relative">
+                <div
+                  class="card features__card--box hover p-relative"
+                  data-aos="flip-down"
+                  data-aos-duration="1000"
+                >
                   <h2 class="h2-sm">Easy</h2>
                   <p class="prgrph-sm">
                     Deep dark blue spectacle before us was indeed sublime.
@@ -341,7 +366,11 @@
                 </div>
               </div>
               <div class="column column-md-6">
-                <div class="card features__card--box hover p-relative">
+                <div
+                  class="card features__card--box hover p-relative"
+                  data-aos="flip-down"
+                  data-aos-duration="1000"
+                >
                   <h2 class="h2-sm">Reliable</h2>
                   <p class="prgrph-sm">
                     Blue spectacle before us was indeed sublime.
@@ -363,7 +392,7 @@
 
     <!--FEATURES-->
 
-    <section id="process">
+    <section id="process" data-aos="fade-up" data-aos-duration="1000">
       <div class="container">
         <div class="txt-center section-title">
           <h2 class="fnt-xs">Creation Process</h2>
@@ -429,7 +458,7 @@
 
     <!--PROCESS-->
 
-    <div class="outer p-relative">
+    <div class="outer p-relative" data-aos="fade-up" data-aos-duration="1000">
       <section id="numbers">
         <div class="container">
           <div class="numbers__title txt-center section-title">
@@ -463,7 +492,11 @@
       <section id="services">
         <div class="container">
           <div class="row">
-            <div class="column column-lg-6">
+            <div
+              class="column column-lg-6"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <div class="card services__card-img p-relative">
                 <div class="double__img--lg p-absolute">
                   <img src="./assets/img/gaming-keyboard.jpg" alt="" />
@@ -478,7 +511,11 @@
                 />
               </div>
             </div>
-            <div class="column column-lg-6">
+            <div
+              class="column column-lg-6"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
               <div class="card services__card-text mg-lg">
                 <h2 class="fnt-xs">Our Service</h2>
                 <h2 class="h2">The Most Important Factors When Applying</h2>
@@ -511,7 +548,11 @@
 
     <section id="game-events">
       <div class="container">
-        <div class="txt-center section-title">
+        <div
+          class="txt-center section-title"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <h2 class="fnt-xs">Game Events</h2>
           <h2 class="h2">Welcome to Game Events</h2>
           <p class="prgph">
@@ -519,7 +560,7 @@
             a playable game for users.
           </p>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-up" data-aos-duration="1000">
           <div class="column column-md-6 column-xl-4">
             <div class="card game-events__card-1 half-card hover">
               <div class="img__box">
@@ -593,7 +634,11 @@
         <div class="container">
           <div class="row">
             <div class="column column-lg-6">
-              <div class="card reviews__left mgr-lg">
+              <div
+                class="card reviews__left mgr-lg"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
                 <h2 class="fnt-xs">Reviews</h2>
                 <h2 class="h2">People Reviews Of Our Games</h2>
                 <h4 class="h3-sub">
@@ -627,7 +672,11 @@
               </div>
             </div>
             <div class="column column-lg-6">
-              <div class="card reviews__box p-relative">
+              <div
+                class="card reviews__box p-relative"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
                 <div class="reviews__img-box p-absolute">
                   <img
                     class="reviews__box-quote"
@@ -678,7 +727,7 @@
         </div>
       </section>
       <!--REVIEWS-->
-      <section id="awards">
+      <section id="awards" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
           <div class="txt-center section-title">
             <h2 class="fnt-xs">Our Awards</h2>
@@ -697,7 +746,11 @@
 
       <section id="articles">
         <div class="container">
-          <div class="game-articles-txt txt-center section-title">
+          <div
+            class="game-articles-txt txt-center section-title"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <h2 class="fnt-xs">OUR BLOG</h2>
             <h2 class="h2">Latest Game Articles</h2>
             <p class="prgph">
@@ -706,7 +759,7 @@
               developers.
             </p>
           </div>
-          <div class="row">
+          <div class="row" data-aos="fade-up" data-aos-duration="1000">
             <div class="column column-md-6 column-xl-4">
               <div class="card articles__card half-card hover">
                 <div class="img__box">
@@ -783,7 +836,7 @@
       <div class="overlay--mid p-absolute"></div>
     </div>
 
-    <section id="banner">
+    <section id="banner" data-aos="fade-up" data-aos-duration="1000">
       <div class="container">
         <div class="banner__row p-relative d-flex">
           <div class="banner__col-content p-absolute d-flex">
@@ -805,7 +858,7 @@
     </section>
     <!--BANNER-->
 
-    <footer id="footer">
+    <footer id="footer" data-aos="fade-up" data-aos-duration="1000">
       <div class="container">
         <div class="row">
           <div class="column column-md-6 column-lg-3">
@@ -867,6 +920,7 @@
     <!--FOOTER-->
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       window.onscroll = () => {
         const navbar = document.querySelector("#navbar");
@@ -879,6 +933,9 @@
         cellAlign: "center",
         contain: true,
       });
+    </script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

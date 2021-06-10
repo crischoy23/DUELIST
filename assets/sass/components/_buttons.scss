@@ -20,6 +20,9 @@
     background-color:#eb525f;
 
 }
+.btn-solid-pink:hover{
+    background-color: $COLOR-BTN-BLUE;
+}
 
 #hero .play-btn{
     height: 48px;
@@ -59,7 +62,7 @@
     border-radius: 10px;
 }
 
-.btn-color:before {
+.btn-color:before{
     content: '';
     background: linear-gradient(45deg, #d502f1, #00b7ff, #7a00ff, #ff00c8);
     position: absolute;
@@ -76,7 +79,7 @@
     border-radius: 10px;
 }
 .play-btn:before,
-.circle_icon:before {
+.circle_icon:before{
     border-radius: 50%;
 }
 

@@ -20,53 +20,57 @@ header{
     width: 48px;
     padding:16px;
 }
-.menu-nav {
-  
-    
-   
-  
-  .navigation-bar li:hover a::before {
-    right: 0;
-    left: 0;
-  }
-  .navigation-bar li a {
-    
-    
-  
-    padding: 20px 0;
-    display: block;
-    position: relative;
-    transition: all 0.3s ease;
-  }
-  .navigation-bar .nav-menu__link--odd:hover {
-    color: #e74c3c;
-  }
-  .navigation-bar .nav-menu__link--even:hover {
-    color: #a83ce7;
-  }
-  .navigation-bar a::before {
-    content: "";
-    transition: all 0.4s ease-in-out;
-    position: absolute;
-    right: 50%;
-    left: 50%;
-    bottom: 0;
-    height: 2px;
-    
-  }
-  .link-txt:hover{
-    font-size: 20px;
-  }
-  .navigation-bar .link-txt::before{
-    background: rgb(0, 238, 255);
-    border-radius: 5px;
-    
-  }
-  .navigation-bar a:hover::before {
-    right: 0;
-    left: 0;
-  }
+
+
+header {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+ 
 }
 
+
+
+
+
+.logo {
+  
+  height: 80px;
+  width: 80px;
+  margin-left: 16px;
+}
+
+
+
+header .link-txt {
+    opacity: 1;
+    transition:0.7s;
+  }
+  header .link-txt:hover{
+    color:$COLOR_PINK; 
+    text-decoration: underline 5px;
+   }
+
+#navbar {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    //border: 5px solid black;
+    z-index:999;
+  
+    &.navbar--scroll {
+      background: $COLOR-BTN-BLUE;
+    }
+  }
+  
+  
+  
+ 
 
 
