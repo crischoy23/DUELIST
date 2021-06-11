@@ -1,3 +1,4 @@
+![Web capture_11-6-2021_22754_crischoy23 github io](https://user-images.githubusercontent.com/80525007/121699529-9a5b1b80-cb01-11eb-94ed-764fbae30cfb.jpeg)
 ## 🔲DUELIST Website(fictional-educational purpose only)
 
 This is a Web design by Laaqiq from Envato Elements. It's coded from scratch into an actual responsive website.
