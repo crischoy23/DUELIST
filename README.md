@@ -16,7 +16,7 @@ This is a Web design by Laaqiq from envato elements. Which was coded into an act
 
 - 🌱 I’m currently learning **Frontend and Backend Web Development**
 
-- 👨‍💻 This is my first mini-project on KodeGo Bootcamp.
+- 👨‍💻 This is my first mini-project in KodeGo Bootcamp.
 
 ## ~Acknowledgments
 
