@@ -1430,6 +1430,92 @@ section{
   padding: 15px 40px 16px 41px;
 }
 
+.gon {
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+}
+
+.hexa {
+  width: 120px;
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  -moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  -ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.polygon__icon {
+  width: 48px;
+  height: 48px;
+}
+
+.polygon__caption .txt-prgph {
+  margin: 0;
+}
+
+#reviews .hexa:hover .overlay {
+  opacity: 0.8;
+}
+
+#reviews .reviews__polygon-box {
+  width: 85%;
+}
+
+.overlayLeft {
+  height: 100%;
+  width: 0;
+  top: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#E6606C), to(#6357F6));
+  background-image: linear-gradient(to right, #E6606C, #6357F6);
+}
+
+.hexa:hover .overlayLeft {
+  width: 250px;
+}
+
+#reviews .gon {
+  width: 80px;
+  height: 80px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4D4F95), to(#2B2D66));
+  background-image: linear-gradient(#4D4F95, #2B2D66);
+  background-size: 220px 220px;
+  /* Text styling */
+  line-height: 80px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  -webkit-transition: color 500ms ease, text-shadow 500ms ease;
+  transition: color 500ms ease, text-shadow 500ms ease;
+  margin-right: 25px;
+}
+
+.gon:hover {
+  color: #fff;
+  text-shadow: 0 0 10px white;
+}
+
+#reviews .hexa {
+  width: 80px;
+  margin-right: 25px;
+  margin-right: 25px;
+}
+
+#reviews .title-row-s {
+  width: 230px;
+}
+
+#reviews .reviews__polygon-box img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100px;
+  height: 100%;
+}
+
 footer {
   text-align: center;
   padding-bottom: 30px;
@@ -1823,6 +1909,9 @@ footer a.prgph:hover,
   }
   #numbers .flexbox {
     width: 100%;
+  }
+  #reviews .reviews__polygon-box {
+    width: 60%;
   }
   .awards__flexbox {
     width: 80%;

@@ -560,3 +560,94 @@ box-shadow: 0px 24px 48px rgba(0, 1, 44, 0.157184);
 
 
 
+    .gon {
+        width: 120px;
+        height: 120px;
+        
+        cursor: pointer;
+       
+      }
+      
+      .hexa {
+        width: 120px;
+        -webkit-clip-path: polygon(
+          50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%
+        );
+        -moz-clip-path: polygon(
+          50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%
+        );
+        -ms-clip-path: polygon(
+          50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%
+        );
+        clip-path: polygon(
+          50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%
+        );
+        
+        
+      }
+    
+    
+    .polygon__icon{
+        width: 48px;
+        height: 48px;
+    }
+    
+    
+    .polygon__caption .txt-prgph{  
+        margin: 0;  
+    }
+    #reviews .hexa:hover .overlay {
+        opacity: 0.8;
+    }
+    #reviews .reviews__polygon-box{
+       width:85%;
+    }
+    .overlayLeft{
+        height: 100%;
+        width: 0;
+        top: 0;
+        
+        background-image: $LINEAR_GRADIENT;
+    }
+    .hexa:hover .overlayLeft{
+        width: 250px;
+        
+        }
+        #reviews .gon {
+            width: 80px;
+            height: 80px;
+            background-image: $CARD-lINEAR;
+            background-size: 220px 220px;
+            
+            /* Text styling */
+            line-height: 80px;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #fff;
+            color: rgba(255,255,255,.5);
+            cursor: pointer;
+            transition: color 500ms ease, text-shadow 500ms ease;
+            margin-right: 25px;
+        
+          }
+          .gon:hover {
+            color: #fff;
+            text-shadow: 0 0 10px white;
+          }
+          #reviews .hexa {
+            width: 80px;
+            margin-right: 25px;
+            margin-right: 25px;
+     
+          }
+          #reviews .title-row-s{
+                width:230px;
+        }
+        #reviews .reviews__polygon-box img{
+            object-fit: cover;
+           width: 100px;
+            height: 100%;
+        }
