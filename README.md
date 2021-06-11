@@ -1,4 +1,4 @@
-DUELIST Website(fictional-educational purpose only)
+## 🔲DUELIST Website(fictional-educational purpose only)
 
 This is a Web design by Laaqiq from envato elements. Which was coded into an actual responsive website.
 
