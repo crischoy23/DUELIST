@@ -1,8 +1,8 @@
 ## 🔲DUELIST Website(fictional-educational purpose only)
 
-This is a Web design by Laaqiq from envato elements. Which was coded into an actual responsive website.
+This is a Web design by Laaqiq from Envato Elements. It's coded from scratch into an actual responsive website.
 
-## 💻 To Visit the site click the link below
+## 💻 To Visit the site, click the link below
 
  https://crischoy23.github.io/DUELIST/
 
@@ -20,7 +20,7 @@ This is a Web design by Laaqiq from envato elements. Which was coded into an act
 
 ## ~Acknowledgments
 
--👩This is project is based on © 2020 **Laaqiq** design from **<a href="https://elements.envato.com/all-items/laaqiq">Envato elements </a>**.
+-👩This is project is based on © 2020 **Laaqiq** design from **<a href="https://elements.envato.com/all-items/laaqiq">Envato Elements </a>**.
 
 - 📫 Interested on my work? contact me at **crispina.agulan@gmail.com**
 
