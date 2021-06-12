@@ -597,7 +597,7 @@ box-shadow: 0px 24px 48px rgba(0, 1, 44, 0.157184);
         margin: 0;  
     }
     #reviews .hexa:hover .overlay {
-        opacity: 0.8;
+        opacity: 1;
     }
     #reviews .reviews__polygon-box{
        width:85%;
@@ -605,8 +605,7 @@ box-shadow: 0px 24px 48px rgba(0, 1, 44, 0.157184);
     .overlayLeft{
         height: 100%;
         width: 0;
-        top: 0;
-        
+        top: 0; 
         background-image: $LINEAR_GRADIENT;
     }
     .hexa:hover .overlayLeft{
