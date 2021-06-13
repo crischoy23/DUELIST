@@ -1,4 +1,4 @@
-![Web capture_11-6-2021_22754_crischoy23 github io](https://user-images.githubusercontent.com/80525007/121699529-9a5b1b80-cb01-11eb-94ed-764fbae30cfb.jpeg)
+![Web_capture_12-6-2021_14256_techsini com-removebg-preview](https://user-images.githubusercontent.com/80525007/121795226-5a9b4d80-cc41-11eb-9d72-b1468012abc3.png)
 ## 🔲DUELIST Website(fictional-educational purposes only)
 
 This is a Web design by Laaqiq from Envato Elements. It's coded from scratch into an actual responsive website.
